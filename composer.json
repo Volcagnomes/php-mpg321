@@ -1,0 +1,17 @@
+{
+	"keywords" : [
+		"mpg321 audio"
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Volcagnomes\\Mpg321\\" : "src"
+		}
+	},
+	"name" : "Volcagnomes/mpg321",
+	"type" : "library",
+	"description" : "Allows a PHP script to control a mpg321 audio player instance",
+	"license" : "GPL-3.0",
+	"require" : {
+		"php" : ">=7.2"
+	}
+}
