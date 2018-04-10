@@ -1,0 +1,48 @@
+High Performance MPEG 1.0/2.0/2.5 Audio Player for Layer 1, 2, and 3.
+Version 0.3.2-1 (2012/03/25). Written and copyrights by Joe Drew,
+now maintained by Nanakos Chrysostomos and others.
+Uses code from various people. See 'README' for more!
+THIS SOFTWARE COMES WITH ABSOLUTELY NO WARRANTY! USE AT YOUR OWN RISK!
+
+Usage: mpg321 [options] file(s) | URL(s) | -
+
+Options supported:
+   --verbose or -v          Increase verbosity
+   --quiet or -q            Quiet mode (no title or boilerplate)
+   --gain N or -g N         Set gain (audio volume) to N (0-100)
+   --skip N or -k N         Skip N frames into the file
+   --frames N or -n N       Play only the first N frames
+   -o dt                    Set output devicetype to dt
+                                [esd,alsa(09),arts,sun,oss]
+   --audiodevice N or -a N  Use N for audio-out
+   --stdout or -s           Use stdout for audio-out
+   --au N                   Use au file N for output
+   --cdr N                  Use cdr file N for output
+   --wav N or -w N          Use wave file N for output
+   --test or -t             Test only; do no audio output
+   --list N or -@ N         Use playlist N as list of MP3 files
+   --random or -Z           Play files randomly until interrupted
+   --shuffle or -z          Shuffle list of files before playing
+   --loop N or -l N         Play files N times. 0 means until
+                            interrupted
+   -R                       Use remote control interface
+   -3                       Restart "remote shell". Used only when in "Remote control" mode.
+   -F                       Turn on FFT analysis on PCM data. Remote mode only
+   -B                       Read recursively the given directories
+   -S                       Report mp3 file to AudioScrobbler
+   -K                       Enable Basic Keys
+   -x                       Set xterm title setting
+   -b                       Number of decoded frames for the output buffer
+   -p hostname:port         Use proxy server
+   -u username:password     Use proxy server basic authentication
+   -U username:password     Use proxy server basic authentication by using environment variables
+   --aggressive             Try to get higher priority
+   --help or --longhelp     Print this help screen
+   --version or -V          Print version information
+Basic keys:                                            
+* or /   Increase or decrease volume.                  
+m        Mute/unmute                                   
+n        Skip song.                                    
+
+This version of mpg321 has been configured with the libao default as its default
+libao output device.
